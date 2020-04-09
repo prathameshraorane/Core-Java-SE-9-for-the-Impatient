@@ -1,0 +1,34 @@
+import java.util.Date;
+
+public class test233
+{
+    public static void main(String[] args) 
+    {
+        Date now = new Date();
+        System.out.println("Hello World!");
+        System.out.println("now: " + now);
+        
+        Employee e1 = new Employee(1);
+        //Employee e2 = new Employee("1");
+    }
+}
+
+class Employee 
+{
+  private static int lastID = 0;
+  private int id = 0;
+  
+  Employee(int id )
+  {
+    this("2");
+    System.out.println("This is ID");
+
+  }
+  
+  Employee(String id )
+  {
+    //this(1);
+    System.out.println("This is String");
+  }
+  
+}
