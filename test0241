@@ -1,0 +1,30 @@
+import java.util.Date;
+
+public class test0241
+{
+    public static void main(String[] args) 
+    {
+        Date now = new Date();
+        System.out.println("Hello World!");
+        System.out.println("now: " + now);
+        
+        Employee e1 = new Employee();
+        Employee e2 = new Employee();
+    }
+}
+
+class Employee 
+{
+  private static int lastID = 0;
+  private int id = 0;
+  
+  Employee()
+  {
+    lastID++;
+    id++;
+    System.out.println("Static value is : " + lastID);
+    System.out.println("Instance variable value is : " + id);
+    System.out.println("##################");
+  }
+  
+}
